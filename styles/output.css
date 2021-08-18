@@ -61,6 +61,7 @@ body {
   background: url(../images/backgroundImg2.jpeg) no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
 }
 .home img {
   display: none;
@@ -115,7 +116,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   height: 0.3rem;
-  width: 5rem;
+  width: 15rem;
   background: #333;
 }
 .about .info {
@@ -149,7 +150,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   height: 0.3rem;
-  width: 5rem;
+  width: 15rem;
   background: #333;
 }
 .skills .skill-bar h3 {
@@ -192,6 +193,9 @@ body {
   min-height: 100vh;
   background: #333;
 }
+.experience a {
+  color: #fc8181;
+}
 .experience .heading {
   font-size: 3rem;
   text-align: center;
@@ -208,7 +212,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   height: 0.3rem;
-  width: 5rem;
+  width: 15rem;
   background: #333;
 }
 .experience .heading::after {
@@ -216,14 +220,15 @@ body {
 }
 .experience .box {
   width: 100%;
-  padding-left: 2.5rem;
+  padding: 2rem 2rem 2rem 2.5rem;
+  margin-left: 2rem;
   border-left: 0.1rem solid #fff;
   position: relative;
 }
 .experience .box::after {
   content: "";
   position: absolute;
-  top: 0.5rem;
+  top: 0.1rem;
   left: -1rem;
   height: 2rem;
   width: 2rem;
@@ -232,16 +237,17 @@ body {
 }
 .experience .box .year {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 .experience .box h3 {
   font-size: 2.5rem;
+  font-weight: 700;
   color: #5287cc;
   margin: 1rem 0;
 }
 .experience .box p {
   color: #ccc;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .projects {
@@ -262,7 +268,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   height: 0.3rem;
-  width: 5rem;
+  width: 15rem;
   background: #333;
 }
 .projects .controls {
@@ -331,7 +337,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   height: 0.3rem;
-  width: 5rem;
+  width: 15rem;
   background: #333;
 }
 .contact .wrap {
@@ -409,6 +415,11 @@ body {
   letter-spacing: 0.1rem;
 }
 
+@media only screen and (max-width: 1025px) {
+  .home {
+    background-position: 68% 50%;
+  }
+}
 @media only screen and (max-width: 768px) {
   html {
     font-size: 55%;
@@ -442,8 +453,7 @@ body {
   .headerCls .nav-toggle {
     top: 5.2rem !important;
   }
-}
-@media only screen and (max-width: 499px) {
+
   .home {
     background: none;
   }
