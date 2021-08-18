@@ -21,10 +21,25 @@
   <body>
     <!-- header starts here -->
     <header class="headerCls fixed-top">
-      <a href="#" class="logo"><h1>PDA</h1></a>
+      <div class="icon-wrap">
+        <a href="https://hng.tech/" alt="HNG logo" target="_blank"
+          ><img src="./images/hng.jpg" width="40px" height="40px" class="logo"
+        /></a>
+
+        <a href="https://ingressive.org/" alt="I4G logo" target="_blank"
+          ><img src="./images/i4g.jpg" width="40px" height="40px" class="logo"
+        /></a>
+
+        <a href="https://internship.zuri.team/" alt="zuri logo" target="_blank"
+          ><img
+            src="./images/zuri2.jpg"
+            width="40px"
+            height="40px"
+            class="logo"
+        /></a>
+      </div>
 
       <div class="fa fa-bars" id="hamburgerMenu"></div>
-      <!-- <i class="fa fa-bars" aria-hidden="true"></i> -->
 
       <nav class="navbar">
         <ul>
@@ -43,7 +58,15 @@
 
     <section id="home" class="container-fluid home">
       <div class="row align-items-center min-vh-100 min-vw-100">
-        <div class="col pl-md-5 ml-md-5 px-4 p-0 text-center text-md-left">
+        <div
+          class="col pl-md-5 ml-md-5 px-4 p-0 text-center text-md-left intro"
+        >
+          <img
+            src="./images/mypicture.jpeg"
+            alt="my picture"
+            width="200px"
+            height="200px"
+          />
           <h2>Hello,</h2>
           <h1>I am <span class="typing-text"></span></h1>
           <a href="#about"><button>about me</button></a>
@@ -61,8 +84,11 @@
         <div class="text-center text-md-left info">
           <h2>My name is Precious Abubakar</h2>
           <p>
-            My favourite thing to do is coding marathons (just kidding, it's a side effect of my affinity for problem-solving). I started actively coding this year and it has been both delightful and challenging. I'm excited to be part of HNGi8 and I'm looking forward to challenging myself to learn more.
-            
+            My favourite thing to do is coding marathons (just kidding, it's a
+            side effect of my affinity for problem-solving). I started actively
+            coding this year and it has been both delightful and challenging.
+            I'm excited to be part of HNGi8 and I'm looking forward to
+            challenging myself to learn more.
           </p>
         </div>
       </div>
@@ -109,94 +135,53 @@
     <section id="experience" class="container-fluid experience">
       <div class="heading">my experience</div>
 
-      <div class="row justify-content-around">
-        <div class="col-md-12 pl-md-0 pl-4">
-          <div class="box">
-            <div
-              class="
-                box-title
-                row
-                align-items-center
-                justify-content-between
-                mt-5
-                ml-3
-              "
-            >
-              <div>
-                <div class="year">08/2021 - Date</div>
-                <h3>HNG Internship 8.0</h3>
-                <p>Frontend Development</p>
-              </div>
+      <div class="col-md-12 pl-md-0 pl-4">
+        <div class="box">
+          <div class="year">08/2021 - Date</div>
+          <h3>HNG Internship 8.0</h3>
+          <p>Frontend Development</p>
 
-              <div class="logos">
-                <img
-                  src="./images/zuri.svg"
-                  alt="Zuri logo"
-                  class="logo-style"
-                />
-                <img src="./images/hngi8.jpg" alt="HNG logo" class="hng" />
-                <img src="./images/I4G.png" alt="I4G logo" class="logo-style" />
-              </div>
+          <p class="mt-5">
+            I am currently participating in the HNG internship, which is a large
+            scale virtual internship for people learning to code and design. It
+            focuses on the post-training phase, and creates a virtual work
+            environment for participants.You can find out more about the
+            internship
+            <a href="https://internship.zuri.team/">here.</a>
+            HNGi8 is powered by <a href="https://hng.tech/">HNG</a> in
+            partnership with
+            <a href="https://internship.zuri.team/">The Zuri Team </a> and
+            <a href="https://ingressive.org/">Ingressive for Good.</a>
+          </p>
+        </div>
 
-              <p class="mt-5">
-                I am currently participating in the HNG internship, which is a
-                large scale virtual internship for people learning to code and
-                design. It focuses on the post-training phase, and creates a
-                virtual work environment for participants.You can find out more
-                about the internship
-                <a href="https://internship.zuri.team/">here.</a>
-                HNGi8 is powered by <a href="https://hng.tech/">HNG</a> in
-                partnership with
-                <a href="https://internship.zuri.team/">The Zuri Team </a> and <a href="https://ingressive.org/">Ingressive for Good.</a>
-              </p>
-            </div>
-          </div>
+        <div class="box">
+          <div class="year">07/2021 - Date</div>
+          <h3>Google Africa Developers Scholarship</h3>
+          <p>Cloud Engineering</p>
 
-          <div class="box">
-            <div
-              class="
-                box-title
-                row
-                align-items-center
-                justify-content-between
-                mt-5
-                ml-3
-              "
-            >
-              <div>
-                <div class="year">07/2021 - Date</div>
-                <h3>Google Africa Developers Scholarship</h3>
-                <p>Cloud Engineering</p>
-              </div>
+          <p class="mt-5">
+            I am also in the associate cloud engineering track of the GADS
+            program. I'm learning about the various computing options in GCP and
+            general cloud architecture. GADS is sponsored by Google, in
+            partnership with <a href="https://andela.com/"> Andela.</a>
+          </p>
+        </div>
 
-              <p class="mt-5">
-                I am also in the associate cloud engineering track of the GADS program. I'm learning about the various computing options in GCP and general cloud architecture. GADS is sponsored by Google, in partnership with <a href="https://andela.com/"> Andela.</a>
-              </p>
-            </div>
-          </div>
+        <div class="box">
+          <div class="year">03/2021 - 07/2021</div>
+          <h3>Zuri Training</h3>
+          <p>Frontend Development</p>
 
-          <div class="box">
-            <div
-              class="
-                box-title
-                row
-                align-items-center
-                justify-content-between
-                mt-5
-                ml-3
-              "
-            >
-              <div>
-                <div class="year">03/2021 - 07/2021</div>
-                <h3>Zuri Training</h3>
-                <p>Frontend Development</p>
-              </div>
-
-              <p class="mt-5">
-                An intensive training for people learning to code and design, which was organised by <a href="https://internship.zuri.team/">Zuri</a> and <a href="https://ingressive.org/">Ingressive for Good.</a> I worked on a couple of tasks including a group project which I linked in <a href="#projects">projects.</a> Others can be found on <a href="https://github.com/misspee007">my github.</a> 
-              </p>
-            </div>
-          </div>
+          <p class="mt-5">
+            An intensive training for people learning to code and design, which
+            was organised by
+            <a href="https://internship.zuri.team/">Zuri</a> and
+            <a href="https://ingressive.org/">Ingressive for Good.</a> I worked
+            on a couple of tasks including a group project which I linked in
+            <a href="#projects">projects.</a> Others can be found on
+            <a href="https://github.com/misspee007">my github.</a>
+          </p>
         </div>
       </div>
     </section>
@@ -266,7 +251,7 @@
     </section>
     <!-- project seection ends -->
 
-    <hr>
+    <hr />
 
     <!-- contact section starts  -->
     <section id="contact" class="container contact">

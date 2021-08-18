@@ -31,15 +31,15 @@ body {
   text-decoration: none;
   color: #333;
 }
+.headerCls .icon-wrap .logo {
+  margin-right: 2rem;
+}
 .headerCls .fa-bars,
 .headerCls .fa-times {
   font-size: 3rem;
   color: #333;
   cursor: pointer;
   display: none;
-}
-.headerCls .logo h1 {
-  margin-bottom: 0;
 }
 .headerCls .navbar ul {
   display: flex;
@@ -58,9 +58,12 @@ body {
 }
 
 .home {
-  background: url(../images/backgroundImg.jpeg) no-repeat;
+  background: url(../images/backgroundImg2.jpeg) no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+.home img {
+  display: none;
 }
 .home h2 {
   font-size: 3rem;
@@ -212,16 +215,15 @@ body {
   background: #fff;
 }
 .experience .box {
-  width: 80%;
+  width: 100%;
   padding-left: 2.5rem;
-  margin-left: 2rem;
   border-left: 0.1rem solid #fff;
   position: relative;
 }
 .experience .box::after {
   content: "";
   position: absolute;
-  top: 0.1rem;
+  top: 0.5rem;
   left: -1rem;
   height: 2rem;
   width: 2rem;
@@ -233,25 +235,13 @@ body {
   font-size: 1.5rem;
 }
 .experience .box h3 {
-  font-size: 2rem;
-  color: turquoise;
+  font-size: 2.5rem;
+  color: #5287cc;
   margin: 1rem 0;
 }
 .experience .box p {
   color: #ccc;
   font-size: 1.5rem;
-}
-.experience .box-title .hng {
-  height: 64px;
-  width: 64px;
-  margin-left: 2rem;
-}
-.experience .box-title .logo-style {
-  background: #fff;
-  height: 64px;
-  width: 118px;
-  padding: 10px;
-  margin-left: 2rem;
 }
 
 .projects {
@@ -424,10 +414,6 @@ body {
     font-size: 55%;
   }
 
-  .home {
-    background-position: center;
-  }
-
   .headerCls .fa-bars,
 .headerCls .fa-times {
     display: block;
@@ -456,14 +442,23 @@ body {
   .headerCls .nav-toggle {
     top: 5.2rem !important;
   }
-
-  .home {
-    background-position-x: 52%;
-  }
 }
 @media only screen and (max-width: 499px) {
-  .hng, .logo-style {
-    display: none;
+  .home {
+    background: none;
+  }
+  .home .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .home .intro img {
+    display: block;
+    margin: 3rem;
+    padding-top: 1rem;
+    border-radius: 100px;
+    box-shadow: 0 0.1rem 0.5rem rgba(51, 51, 51, 0.5);
   }
 }
 

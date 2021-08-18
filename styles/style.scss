@@ -54,18 +54,18 @@ body {
     color: #333;
   }
 
+  .icon-wrap {
+    .logo {
+      margin-right: 2rem;
+    }
+  }
+
   .fa-bars,
   .fa-times {
     font-size: 3rem;
     color: #333;
     cursor: pointer;
     display: none;
-  }
-
-  .logo {
-    h1 {
-      margin-bottom: 0;
-    }
   }
 
   .navbar {
@@ -93,9 +93,13 @@ body {
 
 // home section
 .home {
-  background: url(../images/backgroundImg.jpeg) no-repeat;
+  background: url(../images/backgroundImg2.jpeg) no-repeat;
   background-attachment: fixed;
   background-size: cover;
+
+  img {
+    display: none;
+  }
 
   h2 {
     font-size: 3rem;
@@ -224,17 +228,17 @@ body {
   }
 
   .box {
-    width: 80%;
+    width: 100%;
     padding-left: 2.5rem;
-    margin-left: 2rem;
+    // margin-left: 2rem;
     border-left: 0.1rem solid #fff;
     position: relative;
 
     &::after {
       content: "";
       position: absolute;
-      top: 0.1rem;
-      left:-1rem;
+      top: 0.5rem;
+      left: -1rem;
       height: 2rem;
       width: 2rem;
       background: #fff;
@@ -247,29 +251,13 @@ body {
     }
 
     h3 {
-      font-size: 2rem;
-      color: turquoise;
+      font-size: 2.5rem;
+      color: $blue;
       margin: 1rem 0;
     }
     p {
       color: #ccc;
       font-size: 1.5rem;
-    }
-  }
-
-  .box-title{
-    .hng{
-      height: 64px;
-      width: 64px;
-      margin-left: 2rem;
-    }
-
-    .logo-style{
-      background: #fff;
-      height: 64px;
-      width: 118px;
-      padding: 10px;
-      margin-left: 2rem;
     }
   }
 }
@@ -443,7 +431,6 @@ body {
   }
 
   .home {
-    background-position: center;
   }
 
   .headerCls {
@@ -482,17 +469,28 @@ body {
     }
   }
 
-  .home {
-    background-position-x: 52%;
-  }
-
+  // .home {
+  //   // background-position-x: 52%;
+  // }
 }
-
 
 @media only screen and (max-width: 499px) {
+  .home {
+    background: none;
 
-  .hng, .logo-style{
-    display: none;
+    .intro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        display: block;
+        margin: 3rem;
+        padding-top: 1rem;
+        border-radius: 100px;
+        box-shadow: 0 0.1rem 0.5rem rgba(51, 51, 51, 0.5);
+      }
+    }
   }
 }
-
